@@ -297,131 +297,156 @@ ul{
   color: #24262b;
   background-color: #ffffff;
 }
-
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .main-content {
-    padding: 1rem;
+    width: calc(100% - 80px);
+    height: 100vh;
   }
 
-  .grid-container {
-    grid-column-gap: 20px;
-    grid-row-gap: 10px;
-  }
-
-  .text, .text2 {
-    margin-left: 100px;
-  }
-
-  .image-container, .image-container2 {
-    margin-left: 100px;
+  .text {
+    grid-column: 1 / 2;
+    margin-left: 0;
   }
 }
-
-@media (max-width: 992px) {
-  .sidebar {
-    width: 60px;
-  }
-
-  .sidebar.active {
-    width: 200px;
-  }
-
-  .sidebar .top .logo {
-    opacity: 0;
-  }
-
-  .sidebar.active .top .logo {
-    opacity: 1;
-  }
-
-  .sidebar p {
-    opacity: 0;
-  }
-
-  .sidebar.active p {
-    opacity: 1;
-  }
-
-  .main-content {
-    left: 60px;
-    width: calc(100% - 60px);
-  }
-
-  .sidebar.active ~ .main-content {
-    left: 200px;
-    width: calc(100% - 200px);
-  }
-
-  .text, .text2 {
-    margin-left: 50px;
-  }
-
-  .image-container, .image-container2 {
-    margin-left: 50px;
-  }
-}
-
 @media (max-width: 768px) {
-  .sidebar.active ~ .main-content {
-    left: 60px;
-    width: calc(100% - 60px);
+
+  *{
+    max-height: 690px;
+  }
+  .main-content {
+    width: calc(100% - 80px);
+    height: 100vh;
   }
 
-  .grid-container {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-  }
-
-  .text, .text2 {
+  .text {
+    grid-column: 1 / 2;
     margin-left: 0;
-    text-align: center;
   }
+  .image-container{
+    display: none;
+  
+  }
+  .image-container2{
+    display: none;
+  }
+  .footer-col{
+    margin-left: 100px;
+  }
+  
+}
+@media (max-width: 426px) {
+  
+  *{
+    max-height: 690px;
+  }
+  .main-content {
+    width: calc(100% - 80px);
+    height: 100vh;
+  }
+ 
 
-  .image-container, .image-container2 {
+  .text {
+    grid-column: 1 / 3;
+    grid-row: 1/2;
     margin-left: 0;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
+    font-size: 0.7em;
+    
+  }
+  .text2{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    column-span: 2;
+    width: 200px;
+    font-size: 0.7em;
+  }
+  .image-container{
+    display: none;
+  
+  }
+  .image-container2{
+    display: none;
+  }
+  .footer-col{
+    margin-left: 100px;
+  }
+  
+}
+@media (max-width: 376px) {
+  
+  *{
+    max-height: 690px;
+  }
+  .main-content {
+    width: calc(100% - 80px);
+    height: 100vh;
+  }
+  .grid-container{
+    max-height: 300px;
+    margin-bottom: 0;
   }
 
-  .image-container img, .image-container2 img {
-    height: auto;
-    width: 80%;
-    margin: 10px;
+  .text {
+    grid-column: 1 / 3;
+    grid-row: 1/2;
+    margin-left: 0;
+    font-size: 10px;
+  }
+  .text2{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    margin-left: 0;
+    font-size: 10px;
+  }
+  .image-container{
+    display: none;
+  
+  }
+  .image-container2{
+    display: none;
+  }
+  .footer{
+    display: none;
   }
 }
-
-@media (max-width: 576px) {
-  .sidebar {
-    width: 50px;
+@media (max-width: 321px) {
+  
+  *{
+    max-height: 690px;
   }
-
-  .sidebar.active {
-    width: 150px;
-  }
-
   .main-content {
-    left: 50px;
-    width: calc(100% - 50px);
+    width: calc(100% - 80px);
+    height: 100vh;
+  }
+  .grid-container{
+    max-height: 300px;
+    margin-bottom: 0;
+    padding-right: 0;
   }
 
-  .sidebar.active ~ .main-content {
-    left: 150px;
-    width: calc(100% - 150px);
+  .text {
+    grid-column: 1 / 3;
+    grid-row: 1/2;
+    margin-left: 0;
+    font-size: 0.5em;
+    max-width: 160px;
+    padding-right: 0;
   }
-
-  .footer-col {
-    width: 100%;
-    margin-bottom: 30px;
+  .text2{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    margin-left: 0;
+    font-size: 0.5em;
+    max-width: 160px;
+    padding-right: 0;
   }
-
-  .text, .text2, .image-container, .image-container2 {
-    margin: 0 auto;
-    text-align: center;
+  .image-container{
+    display: none;
+  
   }
-
-  .image-container img, .image-container2 img {
-    height: auto;
-    width: 100%;
+  .image-container2{
+    display: none;
+  }
+  .footer{
+    display: none;
   }
 }

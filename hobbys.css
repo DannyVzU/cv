@@ -228,7 +228,7 @@ body{
   box-sizing: border-box;
 }
 .container{
-  max-width: 1170px;
+  max-width: 1200px;
   margin:auto;
 }
 .row{
@@ -298,14 +298,130 @@ ul{
   background-color: #ffffff;
 }
 
-@media(max-width: 768px){
-  .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
+@media (max-width: 1200px) {
+  .main-content {
+    padding: 1rem;
+  }
+
+  .grid-container {
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+  }
+
+  .text, .text2 {
+    margin-left: 100px;
+  }
+
+  .image-container, .image-container2 {
+    margin-left: 100px;
+  }
 }
+
+@media (max-width: 992px) {
+  .sidebar {
+    width: 60px;
+  }
+
+  .sidebar.active {
+    width: 200px;
+  }
+
+  .sidebar .top .logo {
+    opacity: 0;
+  }
+
+  .sidebar.active .top .logo {
+    opacity: 1;
+  }
+
+  .sidebar p {
+    opacity: 0;
+  }
+
+  .sidebar.active p {
+    opacity: 1;
+  }
+
+  .main-content {
+    left: 60px;
+    width: calc(100% - 60px);
+  }
+
+  .sidebar.active ~ .main-content {
+    left: 200px;
+    width: calc(100% - 200px);
+  }
+
+  .text, .text2 {
+    margin-left: 50px;
+  }
+
+  .image-container, .image-container2 {
+    margin-left: 50px;
+  }
 }
-@media(max-width: 574px){
-  .footer-col{
+
+@media (max-width: 768px) {
+  .sidebar.active ~ .main-content {
+    left: 60px;
+    width: calc(100% - 60px);
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .text, .text2 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .image-container, .image-container2 {
+    margin-left: 0;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .image-container img, .image-container2 img {
+    height: auto;
+    width: 80%;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    width: 50px;
+  }
+
+  .sidebar.active {
+    width: 150px;
+  }
+
+  .main-content {
+    left: 50px;
+    width: calc(100% - 50px);
+  }
+
+  .sidebar.active ~ .main-content {
+    left: 150px;
+    width: calc(100% - 150px);
+  }
+
+  .footer-col {
     width: 100%;
-}
+    margin-bottom: 30px;
+  }
+
+  .text, .text2, .image-container, .image-container2 {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .image-container img, .image-container2 img {
+    height: auto;
+    width: 100%;
+  }
 }

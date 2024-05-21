@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cv</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="werkervaring.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <i class="bx bxl-codepen"></i>
+                <span>Danny van Zuijlen</span>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>  
+        <div class="user">
+        <img src="Danny2.jpg" alt="me" class="user-img">
+        <div>
+            <p class="bold">Danny</p>
+            <p>Admin</p>
+        </div>
+    </div>
+
+        <ul>
+            <li>
+                <a href="index.html">
+                    <i class="bx bxs-home"></i>
+                    <span class="nav-item">home</span>
+                </a>
+                <span class="tooltip">home</span>
+            </li>
+            <li>
+                <a href="overmij.html">
+                    <i class="bx bxs-face"></i>
+                    <span class="nav-item">over.mij</span>
+                </a>
+                <span class="tooltip">over mij</span>
+            </li>
+            <li>
+                <a href="hobbys.html">
+                    <i class="bx bxs-hand"></i>
+                    <span class="nav-item">hobby's</span>
+                </a>
+                <span class="tooltip">hobby's</span>
+            </li>
+            <li>
+                <a href="werkervaring.html">
+                    <i class="bx bxs-briefcase-alt-2"></i>
+                    <span class="nav-item">werkervaring</span>
+                </a>
+                <span class="tooltip">werkervaring</span>
+            </li>  
+            <li>
+                <a href="skills.html">
+                    <i class="bx bxs-brain"></i>
+                    <span class="nav-item">skills</span>
+                </a>
+                <span class="tooltip">skills</span>
+            </li>  
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="grid-container">
+            <div class="text">
+                <h1>bouw</h1>
+                <t>-hoelang:een paar weken</t>
+                <h2>Wat heb ik er van meegekregen</h2>
+                <t>Dingen die ik er van heb meegreken zijn wederom discipline, actief werken en goed samenwerken</t>
+                
+            </div>
+            <div class="image-container">
+                <img src="bouw.jpg" class="bouw" alt="bouw image">
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>navigatie</h4>
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="overmij.html">over mij</a></li>
+                        <li><a href="hobbys.html">hobby's</a></li>
+                        <li><a href="werkervaring.html">werkervaring</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>contact</h4>
+                    <ul>
+                        <li><a href="mailto:217124@talnet.nl">mail</a></li>
+                        <li><a href="mailto:dannyvanzuijlen@gmail.com">prive mail</a></li>
+                        <li><a href="https://www.linkedin.com/in/danny-van-zuijlen-0505372b2/">linkedin</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>social media</h4>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/danny-van-zuijlen-0505372b2/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/dannyvz2006?igsh=NnB3eWxhMzNrcTd6&utm_source=qr"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+</body>
+<script>
+    let btn = document.querySelector('#btn')
+    let sidebar = document.querySelector('.sidebar')
+
+    btn.onclick = function () {
+        sidebar.classList.toggle('active')
+    }
+</script>
+
+</html>
